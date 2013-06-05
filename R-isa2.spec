@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.3.1
+Version:          0.3.2.2
 Release:          1
 Summary:          The Iterative Signature Algorithm
 Group:            Sciences/Mathematics
 License:          file LICENCE
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/isa2_0.3.2-2.tar.gz
 Requires:         R-methods 
 Requires:         R-igraph R-biclust R-lattice 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods
@@ -45,3 +45,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
