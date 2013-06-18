@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          0.3.1
-Release:          1
+Release:          2
 Summary:          The Iterative Signature Algorithm
 Group:            Sciences/Mathematics
 License:          file LICENCE
