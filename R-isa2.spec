@@ -2,17 +2,19 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          0.3.1
-Release:          2
+Version:          0.3.2.2
+Release:          1
 Summary:          The Iterative Signature Algorithm
 Group:            Sciences/Mathematics
 License:          file LICENCE
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/isa2_0.3.2-2.tar.gz
 Requires:         R-methods 
 Requires:         R-igraph R-biclust R-lattice 
+Requires:         R-igraph0
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods
 BuildRequires:    R-igraph R-biclust R-lattice 
+BuildRequires:    R-igraph0
 
 %description
 The ISA is a biclustering algorithm that finds modules in an input matrix.
@@ -39,9 +41,17 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %doc %{rlibdir}/%{packname}/CITATION
 %doc %{rlibdir}/%{packname}/DESCRIPTION
 %{rlibdir}/%{packname}/INDEX
-%{rlibdir}/%{packname}/LICENCE
 %{rlibdir}/%{packname}/NAMESPACE
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Mon Feb 20 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.3.1-1
++ Revision: 777926
+- Import R-isa2
+- Import R-isa2
+
+
