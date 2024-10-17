@@ -7,7 +7,7 @@ Release:          1
 Summary:          The Iterative Signature Algorithm
 Group:            Sciences/Mathematics
 License:          file LICENCE
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/isa2_0.3.2-2.tar.gz
 Requires:         R-methods 
 Requires:         R-igraph R-biclust R-lattice 
